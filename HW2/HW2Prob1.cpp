@@ -5,66 +5,64 @@ class Customer
 private:
     /* data */
 public:
-    class Adult
+   
+};
+ class Adult : public Customer
     {
     private:
         /* data */
     public:
-        Adult(/* args */);
-        ~Adult();
+        
     };
    
-    class Senior
+    class Senior : public Customer
     {
     private:
         /* data */
     public:
-        Senior(/* args */);
-        ~Senior();
+        
     };
     
    
-    class Student
+    class Student : public Customer
     {
     private:
         /* data */
     public:
-        Student(/* args */);
-        ~Student();
+        
     };
-};
 
-Customer::Customer(/* args */)
-{
-}
 
-Customer::~Customer()
-{
-}
 
 class Account
 {
 private:
     /* data */
 public:
-    class Savings
+    
+    
+    
+};
+
+class Savings : public Account
     {
     private:
         /* data */
     public:
-        Savings(/* args */);
-        ~Savings();
+       
     };
     
-    class Checking
+    class Checking : public Account
     {
         private:
 
         public:
 
     };
-    
-    
+class Transaction
+{
+    private:
+
+    public:
+
 };
-
-
