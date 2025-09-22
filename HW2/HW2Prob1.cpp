@@ -42,3 +42,29 @@ Customer::~Customer()
 {
 }
 
+class Account
+{
+private:
+    /* data */
+public:
+    class Savings
+    {
+    private:
+        /* data */
+    public:
+        Savings(/* args */);
+        ~Savings();
+    };
+    
+    class Checking
+    {
+        private:
+
+        public:
+
+    };
+    
+    
+};
+
+
