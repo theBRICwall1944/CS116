@@ -9,15 +9,32 @@ private:
     string telephone_number;
     int customer_number;
 public:
-   
+    void setName (string n){name = n;}
+    
+    string getName() {return name;}
+
+
+    void setAge (int a){age = a;}
+
+    int getAge(){return age;}
+
+    
+    void setTelephone_number (string t){telephone_number = t;}
+
+    string getTelephone_number(){return telephone_number;}
+
+
+    void setCustomer_number (int c){customer_number = c;}
+
+    int getCustomer_number(){return customer_number;}
 };
  class Adult : public Customer
     {
     private:
-        double SAVING_INTREST;
-        double CHECK_INTREST;
-        double CHECK_CHARGE;
-        double OVERDRAFT_PENALTY;
+        const double SAVING_INTREST;
+        const double CHECK_INTREST;
+        const double CHECK_CHARGE;
+        const double OVERDRAFT_PENALTY;
     public:
         
     };
@@ -25,10 +42,10 @@ public:
     class Senior : public Customer
     {
     private:
-        double SAVING_INTREST;
-        double CHECK_INTREST;
-        double CHECK_CHARGE;
-        double OVERDRAFT_PENALTY;
+        const double SAVING_INTREST;
+        const double CHECK_INTREST;
+        const double CHECK_CHARGE;
+        const double OVERDRAFT_PENALTY;
     public:
         
     };
@@ -37,10 +54,10 @@ public:
     class Student : public Customer
     {
     private:
-        double SAVING_INTREST;
-        double CHECK_INTREST;
-        double CHECK_CHARGE;
-        double OVERDRAFT_PENALTY;
+        const double SAVING_INTREST;
+        const double CHECK_INTREST;
+        const double CHECK_CHARGE;
+        const double OVERDRAFT_PENALTY;
     public:
         
     };
@@ -50,9 +67,16 @@ public:
 class Account
 {
 private:
-    /* data */
+    Customer* customer;
+    double balance;
+    string account_number;
+    Transaction transactions[100];
 public:
-    
+    void setBalance(double bal){balance=bal;}
+    void setCustomer(Customer ct){customer=customer;}
+
+
+    double getBalance() {return balance;}
     
     
 };
